@@ -16,10 +16,11 @@ Task Manager is a web application for managing tasks and users. It provides a RE
 
 ## Technologies
 
-- Java 11
+- Java 17
 - Spring Boot
 - Spring Data JPA
 - PostgreSQL
+- Lombok
 
 ## Installation and Running
 
@@ -58,6 +59,9 @@ Task Manager is a web application for managing tasks and users. It provides a RE
 - **Get user by ID:** `GET /api/users/{id}`
 - **Create a new user:** `POST /api/users`
 
-## License
+## Tests
 
-This project is licensed under the [MIT License](LICENSE).
+This project includes unit tests for controllers using JUnit and Mockito. You can run the tests with the following command:
+
+```bash
+mvn test
